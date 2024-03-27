@@ -1,0 +1,39 @@
+#sales-invoice-content table {
+  border-collapse: collapse;
+}
+#sales-invoice-content table th,
+#sales-invoice-content table td {
+  padding: 4px;
+}
+#sales-invoice-content table.invoice-info,
+#sales-invoice-content table.invoice-detail {
+  width: 100%;
+}
+#sales-invoice-content table.invoice-info th,
+#sales-invoice-content table.invoice-detail th,
+#sales-invoice-content table.invoice-info td,
+#sales-invoice-content table.invoice-detail td {
+  border: 1px solid;
+}
+#sales-invoice-content table.invoice-detail {
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+#sales-invoice-content table.invoice-header,
+#sales-invoice-content table.invoice-detail {
+  max-width: 800px;
+}
+#print-v_data_exporting_user_defined_styles h1 {
+  text-align: center;
+}
+#print-v_data_exporting_user_defined_styles table {
+  background-image: url(../../../external_data/images/custom-background-image.png);
+}
+#print-v_data_exporting_user_defined_styles table tr:first-child {
+  background-color: silver;
+}
+#print-v_data_exporting_user_defined_styles table tr:not(:first-child) td:nth-child(5n+5) {
+  font-size: 14px;
+  color: ForestGreen;
+  font-weight: bold;
+}

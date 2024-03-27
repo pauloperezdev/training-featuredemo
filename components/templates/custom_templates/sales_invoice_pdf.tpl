@@ -1,0 +1,1 @@
+{include file="custom_templates/sales_invoice.tpl" InvoiceDate=$Grid.Row.invoice_date.DisplayValue InvoiceCustomer=$Grid.Row.customer_id.DisplayValue BillToAddress=$Grid.Row.bill_to_address.DisplayValue}

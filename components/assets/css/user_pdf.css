@@ -1,0 +1,38 @@
+#sales-invoice-content table.invoice-info,
+#sales-invoice-content table.invoice-detail {
+  width: 100%;
+}
+#sales-invoice-content table.invoice-info th,
+#sales-invoice-content table.invoice-detail th,
+#sales-invoice-content table.invoice-info td,
+#sales-invoice-content table.invoice-detail td {
+  border: 1px solid;
+}
+#sales-invoice-content table.invoice-detail {
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+#sales-invoice-content table.invoice-header,
+#sales-invoice-content table.invoice-detail {
+  max-width: 800px;
+  font-size: 1.2em;
+}
+#pdf-v_data_exporting_user_defined_styles table,
+#pdf-v_data_exporting_user_defined_styles th,
+#pdf-v_data_exporting_user_defined_styles td {
+  border: 3px solid white;
+}
+#pdf-v_data_exporting_user_defined_styles table {
+  background-image: url(external_data/images/custom-background-image.png);
+}
+#pdf-v_data_exporting_user_defined_styles table tr.odd td {
+  background-color: inherit;
+}
+#pdf-v_data_exporting_user_defined_styles table tr th {
+  background-color: silver;
+}
+#pdf-v_data_exporting_user_defined_styles table tr td:nth-child(5n+5) {
+  font-size: 14px;
+  color: ForestGreen;
+  font-weight: bold;
+}

@@ -1,0 +1,16 @@
+<p>
+    This page demonstrates how to implement editor-level validation using the <a href="http://api.jquery.com/jquery.ajax/" target="_blank">Ajax technique</a>.
+</p>
+<p>
+    Assume the values of the <span class="identifier">Email</span> field must be unique in the table. The uniqueness of this field defined at the server side.
+    To check this condition at the client side, you can issue an Ajax request from the
+    <a href="http://www.sqlmaestro.com/products/mysql/phpgenerator/help/01_03_04_05_insert_form_value_changed/" target="_blank">OnInsertFormEditorValueChanged</a>
+    event handler.
+</p>
+<p>
+    For simplicity in the example below the default value for the <span class="identifier">Email</span> field is preset to
+    an email address that already exists in the table, so all you need to test the editor validation is to
+    <a href="#" class="description-insert">open the Insert form</a> and go from Email editor to another one.
+    Click the <span><i class="icon-question"></i></span> button to get familiar with the
+    <a href="#" class="detailed-description">event handler code</a>.
+</p>

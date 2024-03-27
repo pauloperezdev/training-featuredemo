@@ -1,0 +1,18 @@
+<p> PHP Generator provides support for both control level and form level client-side data validation. Control level
+    validation means that data are verified after a user enters a value into a form field and moves onto the next field on the
+    form. On using the form-level validation the data are verified after the user enters (correct) values into all the fields and
+    submits the form.
+</p>
+<p>
+    For control-level validation you can bind one or more of predefined validators like Data Length, Data Range, Email,
+    URL, Credit Card, Regular Expression, etc. to a form field directly in the software UI. To implement form-level validation, you need to
+    provide <a href="http://www.sqlmaestro.com/products/mysql/phpgenerator/help/01_03_04_03_insert_form_validate/" target="_blank">OnInsertFormValidate</a>
+    and/or  <a href="http://www.sqlmaestro.com/products/mysql/phpgenerator/help/01_03_04_04_edit_form_validate/" target="_blank">OnEditFormValidate</a>
+    event handlers.
+</p>
+<p>
+    The example below learns how to implement control-level validation based on a regular expression
+    (the value of the <span class="identifier">Name</span> field should start with a capital letter), and
+    form-level validation (values of <span class="identifier">Name</span>  and <span class="identifier">Last Name</span>
+    fields must be different). Open <a href="?operation=insert">Insert</a> or <a href="?operation=edit&pk0=1">Edit</a> forms to see this in action.
+</p>
