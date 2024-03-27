@@ -1,0 +1,16 @@
+<p>This page shows how to use client-side API to implement dependent (AKA cascading) lookup controls.</p>
+
+<p>
+    In this example, when a user selects a country from the dropdown list, the City dropdown list is automatically populated
+    with the appropriate list of cities. Open <a href="?operation=insert">Insert</a> or <a href="?operation=edit&pk0=1">Edit</a>
+    forms to see these features in action. Click the <i class="icon-question"></i> button to get familiar with the event handlers' code.
+</p>
+
+<p>
+    <strong>Note</strong>. In this example both <span class="identifier">Country</span> and
+    <span class="identifier">City</span> fields are stored in the table. The best practice is to store only the
+    city (which explicitly determines the corresponding country) and use
+    <a href="editors_cascading_combobox.php">Cascading Combobox</a> or <a href="editors_dynamic_cascading_combobox.php">Dynamic Cascading Combobox</a>
+    as this will free the database of modification anomalies.
+    <a href="https://en.wikipedia.org/wiki/Database_normalization" target="_blank">Learn more about normalization</a>.
+</p>

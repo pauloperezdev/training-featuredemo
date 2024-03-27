@@ -1,0 +1,16 @@
+<p>
+    This is a more complex example of using <a href="calculated_columns1.php">calculated columns</a>. To compute the value of the <span class="identifier">Amount (in USD)</span> column,
+    an SQL query to a table that stores daily currency exchange rates is performed.
+</p>
+<p>
+    Technical details are as follows (click a link below to see the appropriate code):
+</p>
+<ul>
+    <li><a href="#" data-bootbox="#on-before-page-execute">OnBeforePageExecute</a> event handler code. It allows you to define a PHP function to be used in the events below</li>
+    <li><a href="#" data-bootbox="#on-get-calculated-field-value">OnCalculateFields</a> event handler code</li>
+    <li>
+        <a href="#" data-bootbox="#on-get-form-editor-calculated-value">OnCalculateControlValues</a> event handler code. As this is a client side event,
+        the value of a PHP function can be obtained with an <a href="http://api.jquery.com/jquery.ajax/" target="_blank">Ajax request</a>
+        that is handled within the <a href="#" data-bootbox="#on-prepare-page">OnPreparePage</a> event.
+    </li>
+</ul>

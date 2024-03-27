@@ -1,0 +1,12 @@
+<p>
+    This page provides an example of implementing so called "Inline button" i.e. a button that immediately changes the value in the database.
+    Click "Change" to make an inactive product active and vice versa.
+</p>
+<p>
+    To implement such a button, it is necessary to provide some event handlers. Technical details are as follows (click a link below to see the appropriate code):
+</p>
+<ul>
+    <li><a href="#" data-bootbox="#on-custom-render-column">OnCustomRenderColumn</a> event handler code. Here the button is drawn.</li>
+    <li><a href="#" data-bootbox="#on-prepare-page">OnPreparePage</a> event handler code. Here parameters are handled and the query is executed.</li>
+    <li><a href="#" data-bootbox="#on-after-page-load">OnAfterPageLoad</a> event handler code. Here the button click is handled and an AJAX call is issued.</li>
+</ul>

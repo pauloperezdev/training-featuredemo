@@ -1,0 +1,23 @@
+<p>
+    You can create your own filtering tool and use it instead of the built-in tools, or along with them.
+    Usually all you need to implement such a filter is to insert an HTML code representing your filter form into a template,
+    instruct PHP Generator to use the new template within the
+    <a href="http://www.sqlmaestro.com/products/mysql/phpgenerator/help/01_03_04_19_get_custom_template/" target="_blank">OnGetCustomTemplate</a> event handler
+    and handle entered parameters within the
+    <a href="http://www.sqlmaestro.com/products/mysql/phpgenerator/help/01_03_04_27_on_prepare_page/" target="_blank">OnPreparePage</a>
+    event handler. In the example below we created a filter which allows you to filter countries by life expectancy.
+</p>
+<p>
+    Technical details are as follows (click a link below to see the appropriate code):
+</p>
+<ul>
+    <li><a href="#" data-bootbox="#on-get-custom-template">OnGetCustomTemplate</a> event handler code.</li>
+    <li>
+        Customized <a href="#" data-bootbox="#custom-grid-toolbar">grid toolbar</a> template including the
+        <a href="#" data-bootbox="#custom-simple-filter">custom filter </a> template which contains a code of the filter form.
+    </li>
+    <li><a href="#" data-bootbox="#on-prepare-page">OnPreparePage</a> event handler code.</li>
+</ul>
+<p>
+    An advanced version of this filter is represented <a href="filtering_custom_filter_advanced.php">on this page</a>.
+</p>

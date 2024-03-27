@@ -1,0 +1,29 @@
+<p>
+    Sometimes during editing and/or inserting records we need to retrieve an additional information from the server side (for example,
+    the value from a session, the value of a GET parameter or data from the database). To obtain such an information, the
+    <a href="https://en.wikipedia.org/wiki/Ajax_(programming)" target="_blank">Ajax technique</a> can be used.
+</p>
+<p>
+
+</p>
+<p>
+    The example below shows how to retrieve such information from the database. When a product is selected in
+    the <a href="#" class="description-detail-insert">Insert form</a>,
+    the value of the <span class="identifier">Unit price </span> editor is filled automatically based on the selected product.
+</p>
+<p>
+    To implement such a functionality, it is necessary to specify the following event handlers (click a name of a handler to see its code):
+</p>
+<ul>
+    <li><a href="#" data-bootbox="#on-insert-form-editor-value-changed">OnInsertFormEditorValueChanged</a> client-side event handler.
+        Here the value of the selected product is sent via an Ajax request to the server to get the default unit price of this product.
+        Then this price value is assigned to the <span class="identifier">Unit price </span> editor (and can be later changed if necessary).
+    </li>
+    <li><a href="#" data-bootbox="#on-prepare-page">OnPreparePage</a> server-side event handler.
+        Here the Ajax request is handled i.e. the product value is retrieved from the request, an SQL query is executed to get the price of the product
+        and then the obtained price is returned as a response to the Ajax request.
+    </li>
+</ul>
+<p>
+    Open the <a href="#" class="description-detail-insert">Insert form</a> for Invoice details to see this feature in action.
+</p>

@@ -1,0 +1,13 @@
+<p>
+    This page demonstrates how to customize export to PDF and the Print form for a single record.
+    For this purpose you need to override the <a href="#" data-bootbox="#sales-invoice-pdf">export/pdf_record.tpl</a>
+    and <a href="#" data-bootbox="#sales-invoice-print">view/print_grid.tpl</a> templates respectively (note that the
+    <a href="#" data-bootbox="#sales-invoice">sales_invoice.tpl</a> template is shared between those templates to avoid code duplication) and
+    point PHP Generator to use modified templates with the
+    <a href="http://www.sqlmaestro.com/products/mysql/phpgenerator/help/01_03_04_19_get_custom_template/" target="_blank">OnGetCustomTemplate</a> event.
+</p>
+<p>
+    Click any of <span><i class="icon-file-pdf"></i></span> or <span><i class="icon-print-page"></i></span> buttons to see the generated invoice.
+    Click the <span><i class="icon-question"></i></span> button to get familiar with the
+    <a href="#" class="detailed-description">event handler code</a>.
+</p>

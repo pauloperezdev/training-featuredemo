@@ -1,0 +1,24 @@
+<p>Column filter allows you to filter data against a specific column. It is available in both
+    <a href="?viewmode=0">grid</a> and <a href="?viewmode=1">card</a> view modes and can be activated by pressing the
+    <span><i class="icon-filter"></i></span> button.
+    By default the filter is enabled for the following columns:
+</p>
+<ul>
+    <li>Lookup columns;</li>
+    <li>Columns based on the date data type (values are grouped by month and year);</li>
+    <li>Enum columns;</li>
+    <li>Boolean columns;</li>
+    <li>BLOB columns.</li>
+</ul>
+<p>For other columns it should be enabled explicitly.</p>
+<p>By default, the filter dropdown displays unique column values while this can be customized with the
+    <a href="http://www.sqlmaestro.com/products/mysql/phpgenerator/help/01_03_04_30_on_prepare_column_filter/" target="_blank">OnPrepareColumnFilter</a>
+    event. Click the <span><i class="icon-question"></i></span> button to learn how a custom filter
+    <a href="#" class="detailed-description">has been implemented</a> for <span class="identifier">Rating</span> and
+    <span class="identifier">Runtime</span> columns (where only custom values are used),
+    and <span class="identifier">Release Date</span> column (custom values are added to default ones).
+</p>
+<p>
+    You can optionally specify the number of items displayed in the filter dropdown as well as change the default sort order
+    of displayed values (the <span class="identifier">Release Date</span> column).
+</p>
